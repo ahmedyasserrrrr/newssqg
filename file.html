@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركاء النجاح</title>
+    <style>
+
+
+        .partners-section {
+            background: #eaf7fb;
+            padding: 40px 0;
+        }
+
+        .section-title {
+            margin: 0;
+        font-size: 40px;
+        color: #207670;
+        margin-bottom: 30px;
+        }
+
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            will-change: transform;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .carousel-card {
+            flex: 0 0 auto;
+            margin: 0 10px;
+        }
+
+        .carousel-card img {
+            max-width: 150px;
+            max-height: 100px;
+            object-fit: contain;
+        }
+
+        .dots {
+            margin-top: 10px;
+        }
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .dot.active {
+            background-color: #005555;
+        }
+
+        @media (max-width: 600px) {
+            .carousel-track {
+                justify-content: center;
+            }
+            .carousel-card {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="partners-section">
+        <h1 class="section-title">شركاء النجاح</h1>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-card"><img src="images/Asset 1.png" alt="Logo 1"></div>
+                <div class="carousel-card"><img src="images/Asset 1.png" alt="Logo 2"></div>
+                <div class="carousel-card"><img src="images/Asset 1.png" alt="Logo 3"></div>
+                <div class="carousel-card"><img src="images/Asset 1.png" alt="Logo 4"></div>
+                <div class="carousel-card"><img src="images/Asset 1.png" alt="Logo 5"></div>
+                <div class="carousel-card"><img src="images/Asset 1.png" alt="Logo 6"></div>
+                <div class="carousel-card"><img src="images/Asset 1.png" alt="Logo 7"></div>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+</body>
+</html>
